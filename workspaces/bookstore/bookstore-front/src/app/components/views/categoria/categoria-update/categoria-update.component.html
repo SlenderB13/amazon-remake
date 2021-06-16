@@ -1,0 +1,17 @@
+<form class="form-container">
+    
+    <h1 class="form-title">Editar Categoria</h1>
+    <mat-form-field class="form">
+        <mat-label>Nome</mat-label>
+        <input matInput [(ngModel)]="categoria.nome" type="text" name="nome">
+    </mat-form-field>
+    <mat-form-field class="form">
+        <mat-label>Descrição</mat-label>
+        <textarea matInput [(ngModel)]="categoria.descricao" type="text" name="descricao"></textarea>
+    </mat-form-field>
+
+    <div class="buttons">
+        <button (click)="update()" mat-raised-button color="primary" class="mat-elevation-z2 criar-btn">Editar</button>
+        <button (click)="cancel()" mat-stroked-button color="warn" class="mat-elevation-z2 cancelar-btn">Cancelar</button>
+    </div>
+</form>
