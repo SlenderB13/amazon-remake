@@ -1,0 +1,59 @@
+.header {
+    background-color: rgb(15, 13, 22);
+    min-height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 5rem 0 5rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header__searchIcon {
+    color: #FF9900;
+}
+
+.header__logoContainer {
+    flex: 4;
+    text-align: center;
+}
+.header__amazonLogo {
+    height: 1.8rem;
+}
+
+.header__nav {
+    display: flex;
+    color: white;
+    flex: 1;
+    justify-content: space-around;
+}
+
+.header__input {
+    background-color: whitesmoke;
+    border-radius: 20px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    flex: 1;
+}
+
+.header__input > input {
+    border: none;
+    background-color: transparent;
+}
+
+.header__option {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__optionTwo {
+    font-weight: 800;
+}
+
+.header__shopping {
+    display: flex;
+    align-items: center;
+}

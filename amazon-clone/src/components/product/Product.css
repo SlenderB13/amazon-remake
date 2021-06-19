@@ -1,0 +1,25 @@
+.product__card {
+    background-color: white;
+    min-width: 18%;
+    min-height: 24rem;
+    border-radius: 20px;
+    padding: 1rem;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.product__info {
+    align-self: flex-start;
+    margin-bottom: 1rem;
+}
+.product__image {
+    height: 12rem;
+}
+
+.product__addToCartBtn {
+    width: 50%;
+    background-color: #FF9900 !important;
+}
