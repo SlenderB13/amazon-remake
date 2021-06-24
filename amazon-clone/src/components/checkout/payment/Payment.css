@@ -1,0 +1,40 @@
+.payment {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    padding: 1.5rem;
+}
+
+.payment > h1 {
+    margin-bottom: 1rem;
+}
+
+.payment > h1 > strong {
+    color: #ff9900;
+}
+
+.payment__section {
+    margin: 0 auto 0 auto;
+    width: 45%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.payment__section > h2 {
+    margin-bottom: 1rem;
+}
+
+.payment__section > p, .payment__section > h2 {
+    color: white;
+}
+
+.payment > h1, .payment > h2 {
+    color: white;
+}
+
+h2 > strong {
+    color: #ff9900;
+}

@@ -1,0 +1,25 @@
+.cartItem {
+    background-color: white;
+    display: flex;
+    padding: 1rem;
+    max-width: 90%;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.cartItem > img {
+    height: 5rem;
+}
+
+.cartItem__info {
+    text-align: start;
+}
+
+.cartItem__removeBtn {
+    border: 1px solid #ff9900 !important;
+    color: #ff9900 !important;
+}
+.cartItem__removeBtn:hover {
+    background-color: #ff9900 !important;
+    color: white !important;
+}

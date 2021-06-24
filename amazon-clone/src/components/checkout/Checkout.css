@@ -1,0 +1,21 @@
+.checkout {
+    display: flex;
+    justify-content: space-around;
+    max-width: 80%;
+    padding: 1.5rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.checkout__left, .checkout__right {
+    flex: 1;
+}
+.checkout__left > h1, .checkout__right > h1 {
+    color: white;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+.checkout__left > h1 > strong, .checkout__right > h1 > strong {
+    color: #FF9900;
+}

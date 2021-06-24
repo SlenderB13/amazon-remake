@@ -1,26 +1,42 @@
 import { Button } from '@material-ui/core'
 import React from 'react'
 import './Product.css'
+import { useStateValue } from '../../StateProvider'
 
-function Product() {
+function Product({ id, title, price, rating, image }) {
+    const [{cart}, dispatch] = useStateValue();
+
+    const addToCart = () => {
+        dispatch({
+            type: 'ADD_TO_CART',
+            item: {
+                id: id,
+                title: title,
+                image: image,
+                price: price,
+                rating: rating
+            }
+        })
+    }
+
     return (
         <div className="product__card">
             <div className="product__info">
-                <h3>Ready Player One: A novel</h3>
+                <h2>{ title }</h2>
                 <p className="product__price">
                     $
-                    <strong>19.99</strong>
+                    <strong>{ price }</strong>
                 </p>
                 <div className="product__rating">
-                    <p>10/10</p>
+                    <p>{ rating }</p>
                 </div>
             </div>
 
             <img 
                 className="product__image"
-                src="https://images-na.ssl-images-amazon.com/images/I/811W9hHXiwL.jpg" />
+                src={image} />
 
-            <Button className="product__addToCartBtn">Add to Cart</Button>
+            <Button onClick={addToCart} className="product__addToCartBtn">Add to Cart</Button>
         </div>
     )
 }

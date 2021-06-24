@@ -1,0 +1,70 @@
+.login {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    background-color: rgb(11, 9, 15)
+}
+
+.login__cardLogo {
+    height: 2rem;
+    object-fit: contain;
+}
+
+.login__card {
+    background-color: rgb(15, 13, 22);
+    width: 25%;
+    height: 45%;
+    margin: 0 auto 0 auto;
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ff9900;
+}
+
+.login__cardForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80%;
+    width: 70%;
+    margin: 1.5rem auto 0 auto;
+}
+
+.login__card > h1 {
+    color: white;
+    font-size: 50px;
+}
+.login__card > h1 > strong {
+    color: #ff9900;
+}
+
+.login__cardForm > input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ff9900;
+    padding: 10px;
+    color: white;
+}
+
+.login__cardBtn {
+    background-color: #ff9900 !important;
+    color: rgb(15, 13, 22) !important;
+}
+
+.login__cardIntro {
+    color: white;
+    font-size: 28px;
+}
+.login__cardIntro > strong {
+    color: #ff9900;
+    font-size: 28px;
+}
+.login__cardIntro > a {
+    color: #ff9900;
+    font-size: 28px;
+    text-decoration: underline;
+}
